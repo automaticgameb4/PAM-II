@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'cadastro_page.dart'; // troca o import
+import 'login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Aula 05',
-      theme: ThemeData(colorSchemeSeed: Colors.indigo),
-      home: const CadastroPage(), // troca aqui
+      title: 'ShopApp',
+      theme: ThemeData(
+        colorSchemeSeed: const Color(0xFF4F46E5),
+        useMaterial3: true,
+      ),
+      home: const LoginPage(),
       debugShowCheckedModeBanner: false,
     );
   }
